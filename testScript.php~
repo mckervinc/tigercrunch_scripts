@@ -1,0 +1,13 @@
+<?php
+include(db_funcs.php);
+$db = new HungerBase();
+$building = 'CS';
+$room_info = '008';
+$food = 'pizza';
+$descr = 'eat it';
+
+for ($x = 0; $x < 1000; $x++)
+  {
+    $db->addFood($building, $room_info, $food, $descr);
+  }
+?>
